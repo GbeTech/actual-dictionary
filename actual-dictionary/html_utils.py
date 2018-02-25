@@ -40,5 +40,3 @@ def get_text_idx(website):
 		else:
 			count += 1
 			text.append(s)
-# s = '<span><span class="intro-colon">:</span> the quality of being unfair or evil</span>\n            </p>'
-# print(remove_tags_from(s))

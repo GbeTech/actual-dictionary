@@ -1,7 +1,7 @@
 import requests
-from lib.Word import Word, Definition
-from lib.html_utils import remove_from, remove_tags_from
-from lib.dictionary_utils import get_from_next_ex, get_from_next_def
+from .Word import Word, Definition
+from .html_utils import remove_from, remove_tags_from
+from .dictionary_utils import get_from_next_ex, get_from_next_def
 
 
 def get_word(word: Word = Word(), query=''):

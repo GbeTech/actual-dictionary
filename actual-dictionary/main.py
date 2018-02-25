@@ -1,16 +1,12 @@
 # from PyDictionary import PyDictionary
 # from get_from_dictionaries import from_wordreference
 import csv
+from .Word import Word
+from . import dictionary_com as dc
+from . import merriam_webster as mw
+from . import wordreference as wr
 
-import lib.Word
-from lib import dictionary_com as dc
-from lib import merriam_webster as mw
-from lib import wordreference as wr
-
-# dictionary = PyDictionary()
-
-
-from lib.html_utils import remove_from
+from .html_utils import remove_from
 
 heb_ab = [
 	'א',
@@ -100,7 +96,7 @@ def append_or_set(d, key, value):
 
 
 def get_definitions_and_examples(query, dic=True, wordref=False, merriam=False):
-	word = lib.Word.Word()
+	word = Word()
 	if dic:
 		word = dc.get_word(word, query)
 	if wordref:
