@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	name='actual-dictionary',
-	author='GbeTech',
+	author='Gilad Barnea',
 	author_email='gbetech@gmail.com',
 	packages=['actual-dictionary'],
 	url='https://github.com/GbeTech/actual-dictionary',
